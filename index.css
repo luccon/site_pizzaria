@@ -9,16 +9,16 @@
     font-size: 100%;
 }
 body {
-    width: 100vw;
+    width: 100%;
     height: 100vw;
-    display: flex;
+    display: flexbox;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
 header {
-    width: 100vw;
-    height: 30vw;
+    width: 100%;
+    height: 35vw;
     background-image: url(sources/mais\ uma\ logo.jpg);
     background-size: cover;
     color: white;
@@ -57,7 +57,7 @@ header h2 {
     color: green;
 }
 main {
-    width: 100vw;
+    width: 100%;
     height: 40vw;
     font-family: roboto;
     background-image: url(/sources/fundo-main2.avif);
@@ -69,7 +69,7 @@ main {
     align-items: center;
 }
 .mais_vendidas {
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -77,7 +77,7 @@ main {
 }
 footer {
     display: flex;
-    width: 100vw;
+    width: 100%;
     height: 30vw;
     font-family: roboto;
     background-color: #fefbf4;
@@ -93,4 +93,65 @@ footer {
     width: 190px;
     height: 265px;
     background-color: #fefbf4;
+}
+
+
+
+@media (max-width: 768px){
+    header {
+        width: 100%;
+        height: 400px;
+    }
+    main {
+        width: 100%;
+        height: 800px;
+    }
+    .mais_vendidas{
+        padding: auto;
+        flex-wrap: nowrap;
+    }
+    footer {
+        width: 100%;
+        height: 600px;
+        font-family: roboto;
+        background-color: #fefbf4;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+    }
+    .imagem_footer {
+        margin: 0;
+        padding: 0;
+    }
+    .texto_footer {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media (max-width: 425px){
+    header {
+        width: 100%;
+        height: 400px;
+    }
+    .logo > h1 h2 {
+        width: 100px;
+        height: 100px;
+    }
+
+    main{
+        width: 100%;
+        height: 1300px;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .mais_vendidas {
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    footer {
+        padding: 20px;
+    }
 }
