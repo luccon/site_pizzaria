@@ -71,6 +71,7 @@ main {
 .mais_vendidas {
     width: 100vw;
     display: flex;
+    justify-content: center;
     flex-direction: row;
     justify-content: space-evenly;
 }
@@ -92,4 +93,7 @@ footer {
     width: 190px;
     height: 265px;
     background-color: #fefbf4;
+}
+.icone_pizza{
+    position: static;
 }
