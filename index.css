@@ -4,9 +4,13 @@
     margin: 0;
     padding: 0;
 }
+body {
+    display: flex;
+    flex-direction: column;
+}
 header {
-    width: 100%;
-    height: 30%;
+    width: 100vw;
+    height: 30vw;
     background-image: url(sources/mais\ uma\ logo.jpg);
     background-size: cover;
     color: white;
@@ -24,7 +28,6 @@ header {
 #baixologo {
     font-size: 40px;
     font-weight: 100;
-    -webkit-text-stroke: black;
 }
 header  h1 {
     color: white;
@@ -46,14 +49,16 @@ header h2 {
     color: green;
 }
 main {
-    width: 100%;
-    height: 40%;
+    width: 100vw;
+    height: 40vw;
     font-family: roboto;
+    background-image: url(/sources/fundo-main2.avif);
+    background-image: cover;
 }
 footer {
     display: flex;
     width: 100%;
-    height: 30%;
+    height: 30vw;
     font-family: roboto;
     background-color: #fefbf4;
     justify-content: space-around;
